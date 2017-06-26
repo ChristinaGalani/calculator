@@ -1,0 +1,166 @@
+body{
+	background-color: white;
+	text-align: center;
+	vertical-align: middle;
+	border-style: solid;
+	border-width: 5px;
+	border-color: red;
+}
+header{
+	position: relative;
+	background-color: white;
+	height: 80px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: yellow;
+}
+main{
+	background-color: gray;
+    margin: 0% 10% 5% 10%;
+    overflow: auto;
+    border-style: solid;
+	border-width: 5px;
+	border-color: red;
+	}
+.screen{
+	position: relative;
+	background-color: green;
+	margin: 2% 2% 2% 2%;
+	height: 120px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: red;
+}
+.bigresult{
+	position:absolute;
+	top:0;
+	right:0;
+	font-size: 5em;
+	padding-right: 5px;
+	background-color: green;
+	text-align: right;
+	width:80px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: red;
+}
+.smallresult{
+	position:absolute;
+	bottom:0;
+	right:0;
+	font-size: 1.5em;
+	padding-right: 5px;
+	background-color: green;
+	text-align: right;
+	width:80px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: yellow;
+}
+h3{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    font-size:2em; 
+    border-style: solid;
+	border-width: 5px;
+	border-color: red;
+}
+h2 {
+	margin-top: 20px;
+	font-size: 3em;
+	border-style: solid;
+	border-width: 5px;
+	border-color: yellow;
+}
+
+
+
+
+
+ul{
+	text-align: center;
+
+}
+li{
+	height: 100%;
+	width: 100%;
+	background-color: red;
+	font-size: 3em;
+	border-width: 1px;
+	border-style: solid;
+	/*border-color: white;*/
+}
+
+.column{
+	float:left;
+	border-style: solid;
+	border-width: 5px;
+	border-color: green;
+	text-align: center;
+	width: 24%;
+}
+.horizontal{
+	float: left;
+	width: 100px;
+}
+.top3rows{
+	text-align: center;
+	width: 100%;
+	border-style: solid;
+	border-width: 5px;
+	border-color: blue;
+	overflow: auto;
+}
+.bottom2rows{
+	clear: left;	
+	border-style: solid;
+	border-width: 5px;
+	border-color: gray;
+	overflow: auto;
+}
+.keyboard{
+	background-color: black; 
+	border-style: solid;
+	border-width: 5px;
+	border-color: white;
+}
+.left{
+	float: left;
+	border-style: solid;
+	border-width: 5px;
+	border-color: blue;
+	width: 74%;
+}
+.right{
+	float: left;
+	border-style: solid;
+	border-width: 5px;
+	border-color: green;
+	width: 24%;
+	height: 200%;
+}
+.toprow{
+	overflow: auto;
+    border-style: solid;
+	border-width: 5px;
+	border-color: yellow;
+}
+.bottomrow{
+	overflow: auto;
+	border-style: solid;
+	border-width: 5px;
+	border-color: white;
+	position: relative;
+}
+.point{
+	position:absolute;
+	top:0;
+	right:0;
+	width: 66.6%;
+}
+.zero{
+	width: 33.3%;
+}

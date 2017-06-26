@@ -1,0 +1,86 @@
+.title{
+	font-size: 40px;
+	font-weight: bold;
+	padding: 20px;
+}
+ body{
+ 	background-color: #808080;
+ 	text-align: center;
+ 	color: white;
+ }
+.wrapper{
+	background-color: #cccccc;
+	margin: 0px 20% 0px 20%;
+	overflow: auto;
+}
+
+h2{
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	padding: 20px;
+}
+
+h1{
+	text-align: right;
+	background-color: green;
+	font-size: 60px;
+	padding: 30px;
+	margin: 0px 50px 50px 50px;
+}
+
+.column{
+	float: left;
+	width: 25%;
+}
+
+.downlow{
+	float: left;
+}
+.horizontal{
+	float: left;
+}
+
+.bigdownrow{
+	clear: left;
+}
+
+/*.lowleft{
+	width: 75%;
+}*/
+
+button{
+	border-color: none;
+	color: white;
+	background-color: red;
+	width:50px;
+	height: 50px;
+}
+
+.equal{
+	height: 100px;
+}
+.zero{
+	float:left;
+	width: 100px;
+}
+.point{
+	float: right;
+}
+
+.horizontallist{
+	border-color: white;
+	width: 150px;
+}
+
+.horisontallist:after {
+  visibility: hidden;
+  display: block;
+  content: " ";
+  clear: both;
+  height: 0;
+  font-size: 0;
+}
+
+
+
