@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Just Another Calculator</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<header>
+			<h3 class="fontsforweb_fontid_422">Just</h3>		
+		</header>
+		<main>
+			<section class="calculator">
+				<h2>Another Calculator</h2>
+				<div class="screen">
+					<h1 class="bigresult fontsforweb_fontid_511" id="bigresult" value="0"
+					>0</h1>
+					<h6 class="smallresult fontsforweb_fontid_511">0</h6>		
+				</div>
+					<div class="keyboard">
+						<div class="left_keyboard">
+							<button type:"button" onclick ="display('AC')" value="AC">AC</button>
+							<button type:"button" onclick ="display('CE')" value="CE">CE</button>
+							<button type:"button" onclick ="display('/')" value="/">/</button>
+							<button type:"button" onclick ="display('7')" value="7">7</button>
+							<button type:"button" onclick ="display('8')" value="8">8</button>
+							<button type:"button" onclick ="display('9')" value="9">9</button>
+							<button type:"button" onclick ="display('4')" value="4">4</button>
+							<button type:"button" onclick ="display('5')" value="5">5</button>
+							<button type:"button" onclick ="display('6')" value="6">6</button>
+							<button type:"button" onclick ="display('1')" value="1">1</button>
+							<button type:"button" onclick ="display('2')" value="2">2</button>
+							<button type:"button" onclick ="display('3')" value="3">3</button>
+							<button class="zero" type:"button" onclick ="display('0')" value="0">0</button>
+							<button type:"button" onclick ="display('.')" value=".">.</button>
+						</div>
+						<div class="right_keyboard">
+						    <button type:"button" onclick ="display('*')" value="*">*</button>
+						    <button type:"button" onclick ="display('-')" value="-">-</button>
+						    <button type:"button" onclick ="display('+')" value="+">+</button>
+						    <button class="equal" type:"button" onclick ="display('=')" value="=">=</button>
+						</div>	
+					</div>
+			</section>	
+		</main>
+		<footer><p><p></footer>
+		<script src="main.js"></script>
+	</body>
+</html>
