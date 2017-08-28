@@ -1,10 +1,69 @@
-alert("JS is working");
+var action = 0;
 
-var Button = document.getElementsByTagName('button')[5];
+var bigResult = document.getElementById('bigResult');
+var smallResult = document.getElementById('smallResult');
+var bigResultValue = '';
+var smallResultValue = '';
+var memory = 0;
 
-var display = function(val){
-	
-	document.getElementById('bigresult').value += val;
+var clearZero = function () {
+ bigResult.textContent= '';
 }
 
-Button.onclick="console.log('this is working')";
+var updateDisplay = function(value){
+
+	    action +=1;
+
+		if (action === 1){
+		clearZero();
+		bigResult.textContent = value;
+		bigResultValue = value;
+		} else if (action <= 12) {
+			bigResult.textContent += value;
+			bigResultValue += value;
+		} else {
+			alert ('You inserted maximum number of charachters')
+		}
+
+}
+
+var allClear = function (){
+	bigResult.textContent = '0';
+	smallResult.textContent= '0';
+	action = 0;
+	memory = 0;
+	equalCounter =0;
+}
+
+var clearEntry = function (value){
+
+	if (bigResultValue.length > 1){
+		bigResultValue = bigResultValue.substring(0, bigResultValue.length -1);
+	}else {
+		bigResultValue = 0;
+	}
+	bigResult.textContent = bigResultValue;
+	action = 0;
+
+}
+
+var equalCounter =0;
+
+var equal = function (bigResultValue){
+	//bigResult.textContent = eval(bigResultValue);
+	smallResult.textContent = eval(bigResultValue); 
+	
+	smallResultValue = eval(bigResultValue);
+	memory = parseInt(smallResultValue);
+	 equalCounter +=1;
+
+	
+}
+
+var operation = function() {
+	if ( equalCounter !== 0){
+	bigResult.textContent = eval(bigResultValue);
+	bigResultValue = memory;
+	console.log(memory);
+	}
+}
