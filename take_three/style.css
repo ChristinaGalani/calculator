@@ -62,7 +62,7 @@ h2 {
 .calculator{
 	background-color:#563447;
     max-width: 430px;
-    height: 545px;
+    min-height: 545px;
 	border-radius: 30px;
 	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 	}
@@ -75,6 +75,7 @@ h2 {
 	padding-right: 10px; 
 	border: 2px solid #CECECE;
     border-radius: 5px;
+    overflow: hidden;
 	
 }
 .bigresult{
@@ -115,11 +116,8 @@ h2 {
 	flex-direction: column;
 	margin: 20px 40px 0px 0px;
 	padding-right: 9px;
-}
 
-/*.right_keyboard button{
-	width: 100%;
-}*/
+}
 
 button{
 	display: flex;
@@ -138,6 +136,25 @@ button{
 	border-color: #927472;
 	margin: 6px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (max-width: 444px) { 
+
+	button {
+		height: 18%;
+    	width: 24%;
+	}
+
+	.right_keyboard {
+
+		width: 45%;
+        margin: 20px 12% 0px -10%;
+	}
+
+	.right_keyboard button {
+		width:100%;
+	}
+	
 }
 
 .equal{	

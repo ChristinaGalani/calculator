@@ -13,17 +13,17 @@ var clearZero = function () {
 var updateDisplay = function(value){
 
 	    action +=1;
-
-		if (action === 1){
+		if (action === 1 || equalCounter >= 1 ){
 		clearZero();
 		bigResult.textContent = value;
 		bigResultValue = value;
-		} else if (action <= 12) {
-			bigResult.textContent += value;
-			bigResultValue += value;
-		} else {
-			alert ('You inserted maximum number of charachters')
-		}
+		equalCounter =0;
+		 } else /*if (bigResultValue.length <= 50)*/ {
+		 	bigResult.textContent += value
+		 	bigResultValue += value;
+		  } //else {
+		// 	alert ('You inserted maximum number of charachters')
+		// }
 
 }
 
@@ -61,8 +61,9 @@ var equal = function (bigResultValue){
 }
 
 var operation = function() {
+	console.log(memory+bigResultValue);
 	if ( equalCounter !== 0){
-	bigResult.textContent = eval(bigResultValue);
+	bigResult.textContent = eval(memory+bigResultValue);
 	bigResultValue = memory;
 	console.log(memory);
 	}
